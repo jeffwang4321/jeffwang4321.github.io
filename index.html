@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="author" content="Jeff Wang"/>
+        <meta name="description" content="Personal Portfolio Website"/>
+
+        <script src="./scroll.js"></script>
+        
+        <link rel="stylesheet" href="./styles.css"/>
+        <link rel="shortcut icon" href="./img/icon.png"/>
+
+        <!-- Icons -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'/>
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+
+        
+
+        <title>Jeff Wang Portfolio</title>
+    </head>
+
+    <body>
+        
+        <!-- Header -->
+        <header>
+            <h3>JEFF WANG.</h3>
+            <h4>
+                <nav>
+                    <ul>
+                        <li><a href="#home" id="home_nav">Home.</a></li>
+                        <li><a href="#about" id="skills_nav">Skills.</a></li>
+                        <li><a href="#work" id="work_nav">Work.</a></li>
+                        <li><a href="#projects"id="projects_nav">Projects.</a></li>
+                        <li><a href="#contact" id="contact_nav">Contact.</a></li>
+                    </ul>
+                </nav>
+            </h4>
+        </header>
+
+<!-- ======================== HOME section ======================== -->
+        <div class="main">
+
+            <div id="home">
+                <img src="./img/jw.jpg">
+                <p>Jeff Wang</p>
+                <h4>Computer Science Undergraduate @ Simon Fraser University</h4> 
+                
+                <button><a href="resume.pdf" target="_"><h4>Resume</h4></a></button>
+            </div>
+
+<!-- ======================== ABOUT section ======================== -->
+
+            <div id="about">
+                <h3>About Me</h3>
+                <p>
+                    Hi there! I'm Jeff Wang and I am an undergraduate computer science student at Simon Fraser University residing in Vancouver, BC. I love being a software engineer; expressing creativity and ideas through technology and code. 
+                </p>
+            </div>
+
+<!-- ======================== SKILL section ======================== -->
+
+            <div class="skills">
+
+                <div class="column">
+                    <h3>Profile</h3>
+                    <ul class="info-list">
+                        <li>
+                            <strong>Full Name:</strong>
+                            <span> &#160; Jeff Wang</span>
+                        </li>
+                        <li>
+                            <strong>Education:</strong>
+                            <span> &#160; Simon Fraser University</span>
+                        </li>
+                        <li>
+                            <strong>Major:</strong>
+                            <span> &#160; Computing Science</span>
+                        </li>
+                        <li>
+                            <strong>Email:</strong>
+                            <span> &#160; <a href="mailto:jwa220@sfu.ca">jwa220@sfu.ca</a></span>
+                        </li>
+                    </ul> <!-- /info-list -->
+                </div>
+        
+                <div class="column">
+                    <h3>Skills</h3>
+                    <ul class="skill-bars">
+                        <li>
+                            <div class="progress percent85"><span>Every Day</span></div>
+                            <i class='bx bxl-python'></i>
+                            <strong>Python, Numpy, Panda</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent80"><span>Well Acquainted</span></div>
+                            <i class='bx bxl-c-plus-plus'></i>
+                            <strong>C, C++, C#</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent90"><span>Having Fun</span></div>
+                            <i class='bx bxl-html5 skills__icon'></i>
+                            <strong>HTML5, CSS3, JavaScript</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent95"><span>Love It</span></div>
+                            <i class='bx bx-pencil'></i>
+                            <strong>Graphic Design, Film Editing </strong>
+                        </li>
+                    </ul> <!-- /skill-bars -->		
+                </div>
+
+            </div>
+
+<!-- ======================== WORK section ======================== -->
+
+            <div id="work">
+                <h3>Work</h3>
+
+                <div class="w-container">
+
+                    <div class="box">
+                        <div class="overlay-text">
+                            <h1>ClearDent</h1>
+                            <p>Database Technician</p>	
+                        </div>
+                        <img src="img/cd.jpg">
+                    </div>
+
+                    <div class="box">
+                        <div class="overlay-text">
+                            <h1>McDonalds</h1>
+                            <p>Team Leader</p>	
+                        </div>
+                        <img src="img/md.jpg">
+                    </div>
+
+                    <div class="box">
+                        <div class="overlay-text">
+                            <h1>Science World</h1>
+                            <p>Exhibit Facilitator</p>	
+                        </div>
+                        <img src="img/sw.jpg">
+                    </div>
+                    
+                </div>
+            </div>
+
+
+<!-- ======================== PROJECTS section ======================== -->
+
+            <div id="projects">
+                <h3>Projects</h3>
+
+                <div class="container">
+
+                    <div class="box">
+                        <div class="overlay-text">
+                            <h1>First Bite</h1>
+                            <p>Newborn Dietary Tracker</p>	
+                        </div>
+                        <img src="img/fb.jpg">
+                    </div>
+
+                    <div class="box">
+                        <div class="overlay-text">
+                            <h1>Reversi AI</h1>
+                            <p>Monte-Carlo Tree Search</p>	
+                        </div>
+                        <img src="img/rai.jpg">
+                    </div>
+
+                    <div class="box">
+                        <div class="overlay-text">
+                            <h1>Candy Factory</h1>
+                            <p>Multithreading & Bounded Buffers</p>	
+                        </div>
+                        <img src="img/cf.jpg">
+                    </div>
+
+                    <div class="box2">
+                        <div class="overlay-text">
+                            <h1>Clinic Database</h1>
+                            <p>C++ ADT class</p>	
+                        </div>
+                        <img src="img/clinic.jpg">
+                    </div>
+
+                    <div class="box2">
+                        <div class="overlay-text">
+                            <h1>Animation</h1>
+                            <p>2D Animation & Film Editing</p>	
+                        </div>
+                        <img src="img/af.png">
+                    </div>
+
+                    <div class="box2">
+                        <div class="overlay-text">
+                            <h1>Blue Bear</h1>
+                            <p>Graphic Design & Branding</p>	
+                        </div>
+                        <img src="img/bb.png">
+                    </div>
+                    
+                </div>
+            </div>
+        
+        </div>    
+<!-- ======================== FOOTER section ======================== -->
+
+        <!-- Footer -->
+        <footer id = "contact">
+            <h3>JEFF WANG.</h3>
+            <div class="footer-links">
+                <a href="mailto:jwa220@sfu.ca" target="_"><i class='bx bx-envelope'></i></i></a>
+                <a href="https://github.com/jeffwang4321" target="_"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/jeff-wang-b81731183/" target="_"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+            <p>&copy; 2020 Jeff Wang All Rights Reserved</p>
+        </footer>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="./main.js"></script>
+
+    </body>
+</html>
