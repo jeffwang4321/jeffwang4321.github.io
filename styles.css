@@ -9,7 +9,6 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-
 /* Header */
 header{
     background-color: #F4F7FF;
@@ -35,6 +34,11 @@ header nav ul li a:hover{
     border-bottom: 3px solid #4070F4;
 }
 
+.active {
+    color: #4070F4;
+    border-bottom: 3px solid #4070F4;
+}
+
 
 /* Home */
 #home{
@@ -54,6 +58,9 @@ header nav ul li a:hover{
     font-weight: 500;
     padding: 5px;
 }
+#home button{
+    margin-top: 30px;
+}
 
 /* Button */
 button{
@@ -63,9 +70,8 @@ button{
     cursor:pointer;
     display: inline-block;
     font-size: 15px;
+    outline: none;  
     padding: 10px 30px;
-    outline: none;
-    margin-top: 30px;
 }
 button:hover{
     box-shadow: inset 200px 0 0 0 gray;
@@ -113,6 +119,73 @@ button a{
     text-decoration: none;
     color:  #4070F4;
 }
+.skills-button{
+    text-align: center;
+}
+
+
+/********************* Popups  *********************/
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.popup {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: 5% auto;
+    padding: 40px;
+    background: #fff;
+    width: 80%;
+    border-radius: 20px;
+}
+.popup .close {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup .close:hover {
+    color: red;
+}
+.content h2 {
+    color: black;
+    margin: 10px 0 20px;
+}
+.content {
+    max-height: 100%;
+    overflow: auto;
+}
+.content li{
+    padding: 0 0 20px 20px;  
+}
+.content b{
+    font-size: 20px;
+}
+.content p{
+    padding: 0 0 20px 20px;  
+}
+.content img{
+    width: 100%;
+    padding: 20px 40px;
+}
+
 
 /*
  * Skillbars - (Reference: https://github.com/bonn0062/anne_bonner/blob/master/css/main.css)
@@ -175,7 +248,7 @@ button a{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 50px 2% 0;
+	padding: 60px 2% 0;
 }
 #work h3{
     text-align: center;
@@ -195,13 +268,13 @@ button a{
 
 
 /* Portfolio */
-#projects{
+#project{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 60px 2%;
 }
-#projects h3{
+#project h3{
     text-align: center;
     font-size: 30px;
     color: #4070F4;
@@ -220,7 +293,7 @@ button a{
 	overflow: hidden;
 	border-radius: 15px;
 	box-shadow: 3px 3px 15px rgba(0,0,0,0.3);
-	position: relative;
+	/* position: relative; */
 }
 .box img{
     width: 100%;
@@ -235,7 +308,7 @@ button a{
 	overflow: hidden;
 	border-radius: 15px;
 	box-shadow: 3px 3px 15px rgba(0,0,0,0.3);
-	position: relative;
+	/* position: relative; */
 }
 .box2 img{
     width: 100%;
@@ -326,6 +399,7 @@ footer a{
         grid-gap: 20px;
     }
     .container{
+        height: 450px;
         grid-template-columns:1fr 1fr;
         grid-gap: 20px;
     }

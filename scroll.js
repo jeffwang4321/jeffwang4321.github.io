@@ -1,102 +1,64 @@
-/*============================== SCROLL NAV Tracker =============================*/ 
-$(document).ready(function(){
-                
-    var home= 0;
-    var skills= $('#home').height();
-    var work= skills+$('#about').height()+$('.skills').height();
-    var projects= work+$('#work').height();
-    var contact= projects+$('#projects').height();
-    $(".main").scroll(function(){
-        var scrollPos= $(this).scrollTop();
-        if (scrollPos >= home && scrollPos < skills){
-            $('#home_nav').css('color','#b93632');
-            $('#skills_nav').css('color','white');
-            $('#work_nav').css('color','white');
-            $('#projects_nav').css('color','white');
-            $('#contact_nav').css('color','white');
-        }
+/*============================== SCROLL REVEAL =============================*/ 
+/*===== MENU SHOW =====*/ 
+const showMenu = (toggleId, navId) =>{
+    const toggle = document.getElementById(toggleId),
+    nav = document.getElementById(navId)
+
+    if(toggle && nav){
+        toggle.addEventListener('click', ()=>{
+            nav.classList.toggle('show')
+        })
+    }
+}
+showMenu('nav-toggle','nav-menu')
+
+/*===== ACTIVE AND REMOVE MENU =====*/
+const navLink = document.querySelectorAll('.nav__link');   
+
+function linkAction(){
+  /*Active link*/
+  navLink.forEach(n => n.classList.remove('active'));
+  this.classList.add('active');
   
-        else if (scrollPos >= skills && scrollPos < work){
-            $('#home_nav').css('color','white');
-            $('#skills_nav').css('color','#b93632');
-            $('#work_nav').css('color','white');
-            $('#projects_nav').css('color','white');
-            $('#contact_nav').css('color','white');
-        }
-  
-        else if (scrollPos >= work && scrollPos < projects){
-            $('#home_nav').css('color','white');
-            $('#skills_nav').css('color','white');
-            $('#work_nav').css('color','#b93632');
-            $('#projects_nav').css('color','white');
-            $('#contact_nav').css('color','white');
-        } 
-  
-        else if(scrollPos >= projects && scrollPos < contact){
-            $('#home_nav').css('color','white');
-            $('#skills_nav').css('color','white');
-            $('#work_nav').css('color','white');
-            $('#projects_nav').css('color','#b93632');
-            $('#contact_nav').css('color','white');
-        }
-  
-        else if(scrollPos >= contact){
-            $('#home_nav').css('color','white');
-            $('#skills_nav').css('color','white');
-            $('#work_nav').css('color','white');
-            $('#projects_nav').css('color','white');
-            $('#contact_nav').css('color','#b93632');
-        }
-       });
-    });
-  
-    $(window).resize(function(){
-        var home= 0;
-        var skills= $('#home').height();
-        var work= skills+$('#skills').height();
-        var projects= work+$('#work').height();
-        var contact= projects+$('#projects').height();
-    
-        $(".main").scroll(function(){
-            var scrollPos= $(this).scrollTop();
-            if (scrollPos >= home && scrollPos < skills){
-                $('#home_nav').css('color','#b93632');
-                $('#skills_nav').css('color','white');
-                $('#work_nav').css('color','white');
-                $('#projects_nav').css('color','white');
-                $('#contact_nav').css('color','white');
-            }
-        
-            else if (scrollPos >= skills && scrollPos < work){
-                $('#home_nav').css('color','white');
-                $('#skills_nav').css('color','#b93632');
-                $('#work_nav').css('color','white');
-                $('#projects_nav').css('color','white');
-                $('#contact_nav').css('color','white');
-            }
-        
-            else if (scrollPos >= work && scrollPos < projects){
-                $('#home_nav').css('color','white');
-                $('#skills_nav').css('color','white');
-                $('#work_nav').css('color','#b93632');
-                $('#projects_nav').css('color','white');
-                $('#contact_nav').css('color','white');
-            } 
-        
-            else if(scrollPos >= projects && scrollPos < contact){
-                $('#home_nav').css('color','white');
-                $('#skills_nav').css('color','white');
-                $('#work_nav').css('color','white');
-                $('#projects_nav').css('color','#b93632');
-                $('#contact_nav').css('color','white');
-            }
-        
-            else if(scrollPos >= contact){
-                $('#home_nav').css('color','white');
-                $('#skills_nav').css('color','white');
-                $('#work_nav').css('color','white');
-                $('#projects_nav').css('color','white');
-                $('#contact_nav').css('color','#b93632');
-            }
-        });
-  });
+  /*Remove menu mobile*/
+  const navMenu = document.getElementById('nav-menu')
+  navMenu.classList.remove('show')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction));
+
+/*===== SCROLL REVEAL ANIMATION =====*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 2000,
+    reset: true
+});
+
+/*SCROLL HOME*/
+sr.reveal('#home img',{});
+sr.reveal('#home h4',{delay: 100}); 
+sr.reveal('#home p',{delay: 200}); 
+sr.reveal('#home button',{delay: 300}); 
+
+
+/*SCROLL ABOUT*/
+sr.reveal('#about h3',{}); 
+sr.reveal('#about p',{delay: 100}); 
+
+/*SCROLL SKILLS*/
+sr.reveal('.column h3',{}); 
+sr.reveal('.info-list',{delay: 200}); 
+sr.reveal('.skill-bars',{delay: 200});
+sr.reveal('.skills-button',{delay: 300});
+
+
+/*SCROLL WORK*/
+sr.reveal('#work h3',{}); 
+sr.reveal('.w-container',{delay: 200}); 
+
+/*SCROLL PROJECTS*/
+sr.reveal('#projects h3',{}); 
+sr.reveal('.box',{delay: 200}); 
+sr.reveal('.box2',{delay: 200}); 
+
+

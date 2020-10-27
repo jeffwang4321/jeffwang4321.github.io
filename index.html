@@ -6,8 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="author" content="Jeff Wang"/>
         <meta name="description" content="Personal Portfolio Website"/>
-
-        <script src="./scroll.js"></script>
         
         <link rel="stylesheet" href="./styles.css"/>
         <link rel="shortcut icon" href="./img/icon.png"/>
@@ -16,202 +14,471 @@
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'/>
 
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
-
-        
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/> 
 
         <title>Jeff Wang Portfolio</title>
     </head>
 
     <body>
         
-        <!-- Header -->
+<!-- ======================== HEADER/NAV bar ======================== -->
         <header>
             <h3>JEFF WANG.</h3>
             <h4>
                 <nav>
                     <ul>
-                        <li><a href="#home" id="home_nav">Home.</a></li>
-                        <li><a href="#about" id="skills_nav">Skills.</a></li>
-                        <li><a href="#work" id="work_nav">Work.</a></li>
-                        <li><a href="#projects"id="projects_nav">Projects.</a></li>
-                        <li><a href="#contact" id="contact_nav">Contact.</a></li>
+                        <li><a href="#home" id="n_home">Home.</a></li>
+                        <li><a href="#about" id="n_about">Skills.</a></li>
+                        <li><a href="#work" id="n_work">Work.</a></li>
+                        <li><a href="#project" id="n_project">Projects.</a></li>
+                        <li><a href="#contact" id="n_contact">Contact.</a></li>
                     </ul>
                 </nav>
             </h4>
         </header>
 
 <!-- ======================== HOME section ======================== -->
-        <div class="main">
+    
+        <div id="home">
+            <img src="./img/jw.jpg">
+            <p>Jeff Wang</p>
+            <h4>Computer Science Undergraduate @ Simon Fraser University</h4> 
+            
+            <button><a href="Resume.pdf" target="_"><h4>Resume</h4></a></button>
+        </div>
 
-            <div id="home">
-                <img src="./img/jw.jpg">
-                <p>Jeff Wang</p>
-                <h4>Computer Science Undergraduate @ Simon Fraser University</h4> 
-                
-                <button><a href="Resume.pdf" target="_"><h4>Resume</h4></a></button>
-            </div>
+<!-- ======================== ABOUT/SKILLS section ======================== -->
 
-<!-- ======================== ABOUT section ======================== -->
-
-            <div id="about">
-                <h3>About Me</h3>
-                <p>
-                    Hi there! I'm Jeff Wang and I am an undergraduate computer science student at Simon Fraser University residing in Vancouver, BC. I love being a software engineer; expressing creativity and ideas through technology and code. 
-                </p>
-            </div>
+        <div id="about">
+            <h3>About Me</h3>
+            <p>
+                Hi there! I'm Jeff Wang and I am an undergraduate computer science student at Simon Fraser University residing in Vancouver, BC. I love being a software engineer; expressing creativity and ideas through technology and code. 
+            </p>
+        </div>
 
 <!-- ======================== SKILL section ======================== -->
 
-            <div class="skills">
-
-                <div class="column">
-                    <h3>Profile</h3>
-                    <ul class="info-list">
-                        <li>
-                            <strong>Full Name:</strong>
-                            <span> &#160; Jeff Wang</span>
-                        </li>
-                        <li>
-                            <strong>Education:</strong>
-                            <span> &#160; Simon Fraser University</span>
-                        </li>
-                        <li>
-                            <strong>Major:</strong>
-                            <span> &#160; Computing Science</span>
-                        </li>
-                        <li>
-                            <strong>Email:</strong>
-                            <span> &#160; <a href="mailto:jwa220@sfu.ca">jwa220@sfu.ca</a></span>
-                        </li>
-                    </ul> <!-- /info-list -->
-                </div>
-        
-                <div class="column">
-                    <h3>Skills</h3>
-                    <ul class="skill-bars">
-                        <li>
-                            <div class="progress percent85"><span>Every Day</span></div>
-                            <i class='bx bxl-python'></i>
-                            <strong>Python, Numpy, Panda</strong>
-                        </li>
-                        <li>
-                            <div class="progress percent80"><span>Well Acquainted</span></div>
-                            <i class='bx bxl-c-plus-plus'></i>
-                            <strong>C, C++, C#</strong>
-                        </li>
-                        <li>
-                            <div class="progress percent90"><span>Having Fun</span></div>
-                            <i class='bx bxl-html5 skills__icon'></i>
-                            <strong>HTML5, CSS3, JavaScript</strong>
-                        </li>
-                        <li>
-                            <div class="progress percent95"><span>Love It</span></div>
-                            <i class='bx bx-pencil'></i>
-                            <strong>Graphic Design, Film Editing </strong>
-                        </li>
-                    </ul> <!-- /skill-bars -->		
-                </div>
-
+        <div class="skills">
+            <!--===== INFO LIST =====-->
+            <div class="column">
+                <h3>Profile</h3>
+                <ul class="info-list">
+                    <li>
+                        <strong>Full Name:</strong>
+                        <span> &#160; Jeff Wang</span>
+                    </li>
+                    <li>
+                        <strong>Education:</strong>
+                        <span> &#160; Simon Fraser University</span>
+                    </li>
+                    <li>
+                        <strong>Major:</strong>
+                        <span> &#160; Computing Science</span>
+                    </li>
+                    <li>
+                        <strong>Email:</strong>
+                        <span> &#160; <a href="mailto:jwa220@sfu.ca">jwa220@sfu.ca</a></span>
+                    </li>
+                </ul> 
             </div>
 
+            <!--===== SKILL BAR =====-->
+            <div class="column">
+                <h3>Skills</h3>
+                <ul class="skill-bars">
+                    <li>
+                        <div class="progress percent85"><span>Every Day</span></div>
+                        <i class='bx bxl-python'></i>
+                        <strong>Python, Numpy, Panda</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent80"><span>Well Acquainted</span></div>
+                        <i class='bx bxl-c-plus-plus'></i>
+                        <strong>C, C++, C#</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent90"><span>Having Fun</span></div>
+                        <i class='bx bxl-html5 skills__icon'></i>
+                        <strong>HTML5, CSS3, JavaScript</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent95"><span>Love It</span></div>
+                        <i class='bx bx-pencil'></i>
+                        <strong>Graphic Design, Film Editing </strong>
+                    </li>
+                </ul>	
+            </div>
+
+        </div>
+
+        <div class="skills-button">
+            <button>
+                <a class="popup-button" href="#popup_skills"><h4>More Skills</h4></a>
+            </button>
+        </div>
+
+        <!-- ======================== Popup Text for Skills ======================== -->
+        <div id="popup_skills" class="overlay">
+            <div class="popup">
+                <a class="close" href="##">×</a>
+                <div class="content">
+                    <h2>Transferable Skills</h2>
+                    <ul>
+                        <li>
+                            •&#160; Strong interpersonal skills developed from past leadership and team member experiences
+                        </li>
+                        <li>
+                            •&#160; Self-directed team member; dedicated to professionalism, organization, and punctuality
+                        </li>
+                        <li>
+                            •&#160; Fast and adaptable learner; able to quickly understand and utilize new technical concepts
+                        </li>
+                        <li>
+                            •&#160; Highly motivated and works well under pressure
+                        </li>
+                        <li>
+                            •&#160; Can effectively convey technical concepts in writing or presenting verbally
+                        </li>
+                        <li>
+                            •&#160; Native proficiency in both English and Mandarin
+                        </li>
+                    </ul>
+                    <h2>Technical Skills</h2>
+                    <ul>
+                        <li>
+                            <b>Languages:</b> Python, C, C++, C#, Java, JavaScript, Swift, R, HTML5
+                        </li>
+                        <li>
+                            <b>Libraries & Frameworks:</b> NumPy, Pandas, Matplotlib, Bootstrap
+                        </li>
+                        <li>
+                            <b>IDEs:</b> Visual Studio, IDLE, Android Studio, XCode, NetBeans, Atom
+                        </li>
+                        <li>
+                            <b>Technologies:</b> GitHub, Linux, JIRA, Office 365, Adobe Creative Cloud
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+            
 <!-- ======================== WORK section ======================== -->
 
-            <div id="work">
-                <h3>Work</h3>
+    <div id="work">
+        <h3>Work</h3>
 
-                <div class="w-container">
+        <div class="w-container">
 
-                    <div class="box">
-                        <div class="overlay-text">
-                            <h1>ClearDent</h1>
-                            <p>Database Technician</p>	
-                        </div>
-                        <img src="img/cd.jpg">
+            <div class="box">
+                <a class="popup-button" href="#popup_w1">
+                    <div class="overlay-text">
+                        <h1>ClearDent</h1>
+                        <p>Database Technician</p>	
                     </div>
-
-                    <div class="box">
-                        <div class="overlay-text">
-                            <h1>McDonalds</h1>
-                            <p>Team Leader</p>	
-                        </div>
-                        <img src="img/md.jpg">
-                    </div>
-
-                    <div class="box">
-                        <div class="overlay-text">
-                            <h1>Science World</h1>
-                            <p>Exhibit Facilitator</p>	
-                        </div>
-                        <img src="img/sw.jpg">
-                    </div>
-                    
-                </div>
+                    <img src="img/cd.jpg">
+                </a>
             </div>
 
+            <div class="box">
+                <a class="popup-button" href="#popup_w2">
+                    <div class="overlay-text">
+                        <h1>McDonalds</h1>
+                        <p>Team Leader</p>	
+                    </div>
+                    <img src="img/md.jpg">
+                </a>
+            </div>
+
+            <div class="box">
+                <a class="popup-button" href="#popup_w3">
+                    <div class="overlay-text">
+                        <h1>Science World</h1>
+                        <p>Exhibit Facilitator</p>	
+                    </div>
+                    <img src="img/sw.jpg">
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- ======================== Popup Text for Work ======================== -->
+    <div id="popup_w1" class="overlay">
+        <div class="popup">
+            <a class="close" href="##">×</a>
+            <div class="content">
+                <p><b>Prococious Technology Inc,</b>&#160; Burnaby, BC — Database Support Technician</p>
+                <p><b>Duration: 8 months</b>&#160; (Apr 2019 – Jan 2020)</p>
+                <ul>
+                    <li>
+                        •&#160; Applied database scripts for software clients using SQL Management Studio
+                    </li>
+                    <li>
+                        •&#160; Assisted onsite technicians with software setups and database migrations
+                    </li>
+                    <li>
+                        •&#160; Responsible for regular software updates and SQL Server maintenance
+                    </li>
+                    <li>
+                        •&#160; Responsible for database backups, cloud set up and regular integrity checks
+                    </li>
+                    <li>
+                        •&#160; Automated and debugged database backups and integrity check scripts
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup_w2" class="overlay">
+        <div class="popup">
+            <a class="close" href="##">×</a>
+            <div class="content">
+                <p><b>McDonalds Canada,</b>&#160; Coquitlam, BC</p>
+                <p><b>Duration: 2 years</b>&#160; (Oct 2014 - May 2017)</p>
+                <ul>
+                    <li>
+                        •&#160; Strong interpersonal skills with customers and team members
+                    </li>
+                    <li>
+                        •&#160; Employee of the month for hospitality
+                    </li>
+                    <li>
+                        •&#160; Dependable worker with leadership capacity and quality assurance
+                    </li>
+                    <li>
+                        •&#160; Works well under pressure and in stressful conditions
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup_w3" class="overlay">
+        <div class="popup">
+            <a class="close" href="##">×</a>
+            <div class="content">
+                <p><b>TELUS the World of Science</b>&#160; , Vancouver, BC</p>
+                <p><b>Duration: 3 months</b>&#160; (Mar 2015 - May 2015)</p>
+                <ul>
+                    <li>
+                        •&#160; Demonstrated and explained the science behind each equipment station and facility
+                    </li>
+                    <li>
+                        •&#160; Responsible for the safety of individuals and provide costumer services to visitors
+                    </li>
+                    <li>
+                        •&#160; Strong interpersonal skills among young adults and children; great with kids
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
 <!-- ======================== PROJECTS section ======================== -->
 
-            <div id="projects">
-                <h3>Projects</h3>
+        <div id="project">
+            <h3>Projects</h3>
 
-                <div class="container">
+            <div class="container">
 
-                    <div class="box">
+                <div class="box">
+                    <a class="popup-button" href="#popup_p1">
                         <div class="overlay-text">
                             <h1>First Bite</h1>
                             <p>Newborn Dietary Tracker</p>	
                         </div>
                         <img src="img/fb.jpg">
-                    </div>
+                    </a>
+                </div>
 
-                    <div class="box">
+                <div class="box">
+                    <a class="popup-button" href="#popup_p2">
                         <div class="overlay-text">
                             <h1>Reversi AI</h1>
                             <p>Monte-Carlo Tree Search</p>	
                         </div>
                         <img src="img/rai.jpg">
-                    </div>
+                    </a>
+                </div>
 
-                    <div class="box">
+                <div class="box">
+                    <a class="popup-button" href="#popup_p3">
                         <div class="overlay-text">
                             <h1>Candy Factory</h1>
                             <p>Multithreading & Bounded Buffers</p>	
                         </div>
                         <img src="img/cf.jpg">
-                    </div>
+                    </a>
+                </div>
 
-                    <div class="box2">
+                <div class="box2">
+                    <a class="popup-button" href="#popup_p4">
                         <div class="overlay-text">
                             <h1>Clinic Database</h1>
                             <p>C++ ADT class</p>	
                         </div>
                         <img src="img/clinic.jpg">
-                    </div>
+                    </a>
+                </div>
 
-                    <div class="box2">
+                <div class="box2">
+                    <a class="popup-button" href="#popup_p5">
                         <div class="overlay-text">
                             <h1>Animation</h1>
                             <p>2D Animation & Film Editing</p>	
                         </div>
                         <img src="img/af.png">
-                    </div>
+                    </a>
+                </div>
 
-                    <div class="box2">
+                <div class="box2">
+                    <a class="popup-button" href="#popup_p6">
                         <div class="overlay-text">
                             <h1>Blue Bear</h1>
                             <p>Graphic Design & Branding</p>	
                         </div>
                         <img src="img/bb.png">
-                    </div>
-                    
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- ======================== Popup Text for Projects ======================== -->
+        <div id="popup_p1" class="overlay">
+            <div class="popup">
+                <a class="close" href="##">×</a>
+                <div class="content">
+                    <p><b>First Bite</b>&#160; — Introduction to Software Engineering, SFU</p>
+                    <p><b>Duration: 3 months</b>&#160; (May 2018 – Aug 2018)</p>
+                    <ul>
+                        <li>
+                            •&#160; Developed an iOS application in a team of five, which acts as a resource for individuals new to parenthood and help guide their newborn’s dietary needs
+                        </li>
+                        <li>
+                            •&#160; Programed dietary tacking features and graphical statistics in XCode using Swift and CocoaPods dependency manager
+                        </li>
+                        <li>
+                            •&#160; Implemented cloud database storage using Google Firebase to sync account statistics and backup history logs
+                        </li>
+                        <li>
+                            •&#160; Focused on agile development methods, performed weekly sprints, meetings and ensured regular deliverables
+                        </li>
+                    </ul>
+                    <iframe width="100%" height="300vh" src="https://www.youtube.com/embed/CmiQvYa9JJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-        
-        </div>    
+        </div>
+
+        <div id="popup_p2" class="overlay">
+            <div class="popup">
+                <a class="close" href="##">×</a>
+                <div class="content">
+                    <p><b>Reversi AI</b>&#160; — Artificial Intelligence Survey, SFU</p>
+                    <p><b>Duration: 10 hrs</b>&#160; (Jul 2020 – Aug 2020)</p>
+                    <ul>
+                        <li>
+                            •&#160; Developed a Reversi AI program in Python using Monte-Carlo Tree Search
+                        </li>
+                        <li>
+                            •&#160; Implemented a custom scoring heuristic on N random playouts to determine the most optimal move for any given board state
+                        </li>
+                        <li>
+                            •&#160; Wrote automatable test scripts and conducted performance measures to ensure program quality and integrity
+                        </li>
+                        <li>
+                            •&#160; Conducted data analysis over 1,000 test runs and efficiently transcribed the data into a final written repot
+                        </li>
+                    </ul>          
+                </div>
+            </div>
+        </div>
+
+        <div id="popup_p3" class="overlay">
+            <div class="popup">
+                <a class="close" href="##">×</a>
+                <div class="content">
+                    <p><b>Candy Factory</b>&#160; — Operating Systems, SFU</p>
+                    <p><b>Duration: 7 hrs</b>&#160; (Nov 2018 - Dec 2018)</p>
+                    <ul>
+                        <li>
+                            •&#160; Developed a multi-threading processor in C that uses producer and consumer operators to manage candy items stored in a bounded buffer, thread signaling is done to kill processes
+                        </li>
+                        <li>
+                            •&#160; One group of threads model candy factories which generate candies and insert the candies into the bounded buffer. Another group of threads model kids which eat candies from the bounded buffer
+                        </li>
+                        <li>
+                            •&#160; Implemented the bounded buffer module in a transparent manner which encapsulates the data so that the buffer does not need to know about the type of information it is storing
+                        </li>
+                        <li>
+                            •&#160; Created a statistics tracking module to displaying stat summaries, and time delays
+                        </li>
+                    </ul>                   
+                </div>
+            </div>
+        </div>
+
+        <div id="popup_p4" class="overlay">
+            <div class="popup">
+                <a class="close" href="##">×</a>
+                <div class="content">
+                    <p><b>Clinic Database</b>&#160; — Data Structures and Programming, SFU</p>
+                    <p><b>Duration: 8 hrs</b>&#160; (May 2017 - Jun 2017)</p>
+                    <ul>
+                        <li>
+                            •&#160; Developed a program in C++ which maintains the medical records for all the patients of the clinic to allow efficient data access, designed the data collection as an ADT class
+                        </li>
+                        <li>
+                            •&#160; Implemented the ADT classes using a static array that expanded in a transparent fashion, which can modify sections of ADT without changing the public interface of the data
+                        </li>
+                        <li>
+                            •&#160; Effectively organized the database structure by programming reusable functions to maximize efficiency and conducted the corresponding debugging tests to ensure specifications
+                        </li>
+                    </ul>                   
+                </div>
+            </div>
+        </div>
+
+        <div id="popup_p5" class="overlay">
+            <div class="popup">
+                <a class="close" href="##">×</a>
+                <div class="content">
+                    <p><b>2D Animation & Film Editing</b>&#160; — Personal Projects</p>
+                    <ul>
+                        <li>
+                            •&#160; Experience designing 2D vector graphics in Adobe Animate and Photoshop
+                        </li>
+                        <li>
+                            •&#160; Strong background in photography, photo editing and animation technology
+                        </li>
+                        <li>
+                            •&#160; Experience editing film for personal projects and friends
+                        </li>
+                    </ul>    
+                </div>
+            </div>
+        </div>
+
+        <div id="popup_p6" class="overlay">
+            <div class="popup">
+                <a class="close" href="##">×</a>
+                <div class="content">
+                    <p><b>Blue Bear</b>&#160; — Friend Request</p>
+                    <p><b>Duration: 45min</b>&#160; (June 2020)</p>
+                    <ul>
+                        <li>
+                            •&#160; Drafted multiple logos and text samples for design prototyping
+                        </li>
+                        <img src="./img/bblogo.png">
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+          
 <!-- ======================== FOOTER section ======================== -->
 
-        <!-- Footer -->
         <footer id = "contact">
             <h3>JEFF WANG.</h3>
             <div class="footer-links">
@@ -219,14 +486,17 @@
                 <a href="https://github.com/jeffwang4321" target="_"><i class='bx bxl-github'></i></a>
                 <a href="https://www.linkedin.com/in/jeff-wang-b81731183/" target="_"><i class='bx bxl-linkedin-square'></i></a>
             </div>
-            <p>&copy; 2020 Jeff Wang All Rights Reserved</p>
+            <p>© 2020 Jeff Wang All Rights Reserved</p>
         </footer>
 
+<!-- ======================== MAIN JS ======================== -->
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="./scroll.js"></script>
 
-        <!--===== MAIN JS =====-->
-        <script src="./main.js"></script>
+        <!--===== NAV ACTIVE ON SCROLL =====-->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/1.1.6/waypoints.min.js'></script><script  src="./nav.js"></script>
 
     </body>
 </html>
