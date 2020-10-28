@@ -58,9 +58,27 @@ header nav ul li a:hover{
     font-weight: 500;
     padding: 5px;
 }
-#home button{
+.home_buttons{
     margin-top: 30px;
 }
+#git_button{
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+}
+#git_button i{
+    padding: 0 5px 0 0;
+    font-size: 40px;
+    color: black;
+    vertical-align: middle;
+}
+#git_button b{
+    vertical-align: middle;
+}
+#git_button:hover i, #git_button:hover b{
+    color: grey;
+}
+
 
 /* Button */
 button{
@@ -74,7 +92,7 @@ button{
     padding: 10px 30px;
 }
 button:hover{
-    box-shadow: inset 200px 0 0 0 gray;
+    box-shadow: inset 200px 0 0 0 grey;
 }
 button a{
     color: white;
@@ -85,7 +103,7 @@ button a{
 /* About */
 #about{
     text-align: center; 
-    padding-top: 65px;
+    padding-top: 60px;
 }
 #about h3{
     display: block;
@@ -124,69 +142,6 @@ button a{
 }
 
 
-/********************* Popups  *********************/
-.overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.8);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
-    z-index: 1;
-}
-.overlay:target {
-    visibility: visible;
-    opacity: 1;
-}
-  
-.popup {
-    margin: auto;
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-    margin: 5% auto;
-    padding: 40px;
-    background: #fff;
-    width: 80%;
-    border-radius: 20px;
-}
-.popup .close {
-    position: absolute;
-    top: 8px;
-    right: 20px;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-}
-.popup .close:hover {
-    color: red;
-}
-.content h2 {
-    color: black;
-    margin: 10px 0 20px;
-}
-.content {
-    max-height: 100%;
-    overflow: auto;
-}
-.content li{
-    padding: 0 0 20px 20px;  
-}
-.content b{
-    font-size: 20px;
-}
-.content p{
-    padding: 0 0 20px 20px;  
-}
-.content img{
-    width: 100%;
-    padding: 20px 40px;
-}
-
-
 /*
  * Skillbars - (Reference: https://github.com/bonn0062/anne_bonner/blob/master/css/main.css)
  */
@@ -196,7 +151,7 @@ button a{
 }
 .skill-bars li {
     position: relative;
-    background: #a1a1a1;
+    background: lightgrey;
 	height: 6px;
 	width: 100%;
     margin-bottom: 54px;
@@ -333,6 +288,99 @@ button a{
 }
 
 
+/********************* Popup Menues *********************/
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.popup {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: 5% auto;
+    padding: 40px;
+    background: #fff;
+    width: 80%;
+    border-radius: 20px;
+}
+.popup .close {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup .close:hover {
+    color: red;
+}
+.content h2 {
+    padding-bottom: 10px;
+}
+.content {
+    max-height: 100%;
+    overflow: auto;
+}
+.content li{
+    padding: 0 20px 20px 20px;  
+}
+.content b{
+    font-size: 20px;
+}
+.content p{
+    padding-bottom: 10px;
+}
+.content img{
+    width: 100%;
+    padding: 20px 40px;
+}
+
+/* Youtube Videos iframe*/
+iframe{
+    padding: 20px;
+}
+
+/* Technology Table for Popup menu */
+table{
+    margin: 20px 2%;
+    background-color: white;
+    width: 96%;
+    height: auto;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+table th{
+    background-color: #F4F7FF;
+    color: black;
+    height: 40px;
+    font-size: 20px;
+}
+#table_item{
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+}
+#table_item img{
+    padding: 20px;
+    height: 100px;
+    width: 100px;
+}
+
 
 /* Footer */
 footer{
@@ -363,11 +411,11 @@ footer a{
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: darkgrey;
 } 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: grey;
 }
 
 
