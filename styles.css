@@ -5,6 +5,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -137,6 +140,9 @@ button a{
     text-decoration: none;
     color:  #4070F4;
 }
+.info-list li a:hover{
+    color:  grey;
+}
 .skills-button{
     text-align: center;
 }
@@ -170,15 +176,18 @@ button a{
 }
 .skill-bars li .progress {
     position: relative;
-	background: #313131;
+	background: black;
 	height: 100%;
 }
+/* Chat bubbles */
 .skill-bars li .progress span {
     position: absolute;
-	right: -10px;
+    /* text-align: center;
+    width: 100px; */
+	right: -5.3%;
 	top: -40px;
 	color: white;
-	background: #313131;
+	background: black;
 	padding: 5px 10px;
     border-radius: 3px;
     font-size: 14px;
@@ -198,7 +207,7 @@ button a{
 .skill-bars li .percent95  { width: 95%; }
 
 
-/* Work */
+/* Work section*/
 #work{
 	display: flex;
 	flex-direction: column;
@@ -222,7 +231,7 @@ button a{
 }
 
 
-/* Portfolio */
+/* Portfolio section*/
 #project{
 	display: flex;
 	flex-direction: column;
@@ -248,7 +257,6 @@ button a{
 	overflow: hidden;
 	border-radius: 15px;
 	box-shadow: 3px 3px 15px rgba(0,0,0,0.3);
-	/* position: relative; */
 }
 .box img{
     width: 100%;
@@ -263,7 +271,6 @@ button a{
 	overflow: hidden;
 	border-radius: 15px;
 	box-shadow: 3px 3px 15px rgba(0,0,0,0.3);
-	/* position: relative; */
 }
 .box2 img{
     width: 100%;
@@ -331,7 +338,7 @@ button a{
 .content h2 {
     padding-bottom: 10px;
 }
-.content {
+.content{
     max-height: 100%;
     overflow: auto;
 }
@@ -344,14 +351,14 @@ button a{
 .content p{
     padding-bottom: 10px;
 }
+/* images and youtube Videos in popups*/
 .content img{
-    width: 100%;
-    padding: 20px 40px;
+    text-align: center;
+    padding: 0px 40px;
 }
-
-/* Youtube Videos iframe*/
-iframe{
-    padding: 20px;
+.content iframe{
+    text-align: center;
+    padding: 0px 40px;
 }
 
 /* Technology Table for Popup menu */
@@ -368,6 +375,7 @@ table th{
     color: black;
     height: 40px;
     font-size: 20px;
+    padding-top: 5px;
 }
 #table_item{
     display: inline-block;
@@ -382,7 +390,7 @@ table th{
 }
 
 
-/* Footer */
+/* Footer section*/
 footer{
     background: black;
     color: white;
@@ -394,6 +402,9 @@ footer a{
     color: white;
     font-size: 25px;
     padding: 15px;
+}
+footer a:hover{
+    color: #4070F4;
 }
 .footer-links{
     padding: 10px;
