@@ -1,5 +1,5 @@
 //Default active on home
-// $('#n_home').addClass("active");
+$('#n_home').addClass("active");
 
 /*
 Using jquery waypoints to change active on scroll
