@@ -1,5 +1,5 @@
 # jeffwang4321.github.io
-Jeff Wang New Resume Website Update (2020) HTML5 + CSS + JS
+Responsive Website Design - Jeff Wang Portfolio - HTML5 + CSS + JS
 
 - Compiled numerous online resources in order to learn basic web development in the span of a week
 
