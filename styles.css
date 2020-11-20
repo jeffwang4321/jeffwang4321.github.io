@@ -225,7 +225,7 @@ button a{
 }
 .w-container{
 	width: 90%;
-	height: 160px;
+	height: 240px;
 	display:grid;
 	grid-template-columns:1fr 1fr 1fr;
 	grid-gap: 30px;
@@ -249,7 +249,7 @@ button a{
 }
 .container{
 	width: 90%;
-	height: 345px;
+	height: 780px;
 	display:grid;
 	grid-template-columns:1fr 1fr 1fr;
 	grid-gap: 30px;
@@ -430,6 +430,17 @@ footer a:hover{
     background: grey;
 }
 
+/* Smaller project/ work grids */
+@media only screen and (max-width : 1400px){
+    .w-container{
+        height: 160px;
+        grid-template-columns:1fr 1fr 1fr;
+    }
+    .container{
+        height: 540px;
+        grid-template-columns:1fr 1fr 1fr;
+    }
+}
 
 /* Remove Chat bubbles*/
 @media only screen and (max-width : 1038px){
@@ -459,7 +470,7 @@ footer a:hover{
         grid-gap: 20px;
     }
     .container{
-        height: 450px;
+        height: 630px;
         grid-template-columns:1fr 1fr;
         grid-gap: 20px;
     }
@@ -513,7 +524,7 @@ footer a:hover{
         grid-template-columns:1fr;
     }
     .container{
-        height: 1000px;
+        height: 1200px;
         grid-template-columns:1fr;
     }
     .overlay-text{

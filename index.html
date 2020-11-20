@@ -236,6 +236,10 @@
                                     <img src="logo/boot.png">
                                     <h4>Bootstrap</h4>
                                 </div>     
+                                <div id= "table_item">
+                                    <img src="logo/nodejs.png">
+                                    <h4>Node.js</h4>
+                                </div>
                             </td>
                         </tr>  
                         <td>&#160;</td> 
@@ -520,6 +524,16 @@
             <div class="container">
 
                 <div class="box">
+                    <a class="popup-button" href="#popup_p0">
+                        <div class="overlay-text">
+                            <h1>IO Games</h1>
+                            <p>Multiplayer Socket Games</p>	
+                        </div>
+                        <img src="img/io.jpg">
+                    </a>
+                </div>
+
+                <div class="box">
                     <a class="popup-button" href="#popup_p1">
                         <div class="overlay-text">
                             <h1>First Bite</h1>
@@ -584,6 +598,161 @@
         <div id="project_b"></div>
 
         <!-- ======================== Popup Text for Projects ======================== -->
+        <div id="popup_p0" class="overlay">
+            <div class="popup">
+                <a class="close" href="##">×</a>
+                <div class="content">
+                    <p><b>IO Games</b>&#160; — Personal Project &#160; <a id="git_button" href="https://github.com/jeffwang4321/IO-Games" target="_"><i class='bx bxl-github'></i><b>GitHub</b></a></p>
+                    <p><b>Duration: 2 week</b>&#160; (Oct 2020 – Nov 2020)</p>
+                    <ul>
+                        <li>
+                            •&#160; Browser based IO Games using Node.js and socket.io packets
+                        </li>
+                        <li>
+                            •&#160; Mimic a client server environment using web sockets
+                        </li>
+                        <li>
+                            •&#160; Client connections organized into unique rooms and can run independently
+                        </li>
+                        <li>
+                            •&#160; Hosted example: <a href="https://io-games-jeff-wang.herokuapp.com/" target="_">https://io-games-jeff-wang.herokuapp.com/</a>
+                        </li>
+                    </ul>
+
+                    <!-- <p><b>Features</b></p>
+                    <p>Chat Features:</p>
+                    <ul>
+                        <li>
+                            •&#160; Users can join different rooms by each entering a player name and game id
+                        </li>
+                        <li>
+                            •&#160; Users can assigned a unique identification color
+                        </li>
+                        <li>
+                            •&#160; Users can send messages to other users in the room
+                        </li>
+                        <li>
+                            •&#160; A notification is sent when a user joins or leaves the room
+                        </li>
+                        <li>
+                            •&#160; Chatroom tracks the number of connected users, player name & color
+                        </li>
+                        <li>
+                            •&#160; Users can toggle chat display to show or hide chat
+                        </li>
+                    </ul>
+                
+                    <p>Game Features:</p>
+                    <ul>
+                        <li>
+                            •&#160; Score tracking displays in real-time
+                        </li>
+                        <li>
+                            •&#160; Room connection for current room is disabled while game is in session
+                        </li>
+                        <li>
+                            •&#160; Room state & display automatically reset at the end of each round
+                        </li>
+                        <li>
+                            •&#160; User disconnection, empty room state and multi-round edge cases tested
+                        </li>
+                        <li>
+                            •&#160; Blank tiles change to user color on click (Spam Colors)
+                        </li>
+                        <li>
+                            •&#160; Interactive answer prompts display after user input (Party Blanks)
+                        </li>
+                        <li>
+                            •&#160; Individual card type and info tracked and responsive to client interaction (Hearts & Skulls)
+                        </li>
+                    </ul> -->
+
+                    <p><b>How To Play</b></p>
+                    <p>Spam Colors:</p>
+                    <ul>
+                        <li>
+                            •&#160; Click the blank tiles to get +1 point
+                        </li>
+                        <li>
+                            •&#160; Game end when all 100 tiles have been clicked
+                        </li>
+                        <li>
+                            •&#160; Click the most tiles to win!
+                        </li>
+                    </ul>
+                    <img width ="100%" src="./img/game1.png">
+
+                    <p></p><p></p><p></p>
+                    <p>Party Blanks:</p>
+                    <ul>
+                        <li>
+                            •&#160; Each player takes turns reading the prompt
+                        </li>
+                        <li>
+                            •&#160; Remaining players have 1 chance to answer the prompt
+                        </li>
+                        <li>
+                            •&#160; Once remaining players have answered, hit the reveal button to read the answers
+                        </li>
+                        <li>
+                            •&#160; Prompt reader then selects their favourite answer for +1 point!
+                        </li>
+                        <li>
+                            •&#160; Click the button to skip bad prompts or end the game
+                        </li>
+                    </ul>
+                    <img width ="100%" src="./img/game2.jpg">
+
+                    <p></p><p></p><p></p>
+                    <p>Hearts & Skulls:</p>
+                    <ul>
+                        <li>
+                            •&#160; Each round players can place any combination of 2 hearts and 2 skulls
+                        </li>
+                        <li>
+                            •&#160; At the end of each round, players bid for the highest # of flips
+                        </li>
+                        <li>
+                            •&#160; The winning player randomly flips the same # of cards they had betted on
+                        </li>
+                        <li>
+                            •&#160; Click the button to end the round
+                        </li>
+                        <li>
+                            •&#160; If the player does not hit a skull after all their flips +1 point!
+                        </li>
+                        <li>
+                            •&#160; If the player hits at least one skull -1 point
+                        </li>
+                    </ul>
+                    <img width ="100%" src="./img/game3.jpg">
+                    
+                    <table>
+                        <tr><th>TECHNOLOGIES</th></tr>
+                        <tr>
+                            <td>
+                                <div id= "table_item">
+                                    <img src="logo/nodejs.png">
+                                    <h4>Node.js</h4>
+                                </div>
+                                <div id= "table_item">
+                                    <img src="logo/socket.png">
+                                    <h4>Socket.io</h4>
+                                </div>
+                                <div id= "table_item">
+                                    <img src="logo/javascript.png">
+                                    <h4>JavaScript</h4>
+                                </div>  
+                            </td>
+                        </tr>  
+                    </table>
+
+                </div>
+            </div>
+        </div>
+        
+        
+        
         <div id="popup_p1" class="overlay">
             <div class="popup">
                 <a class="close" href="##">×</a>
