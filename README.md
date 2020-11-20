@@ -1,7 +1,7 @@
 # jeffwang4321.github.io
 Responsive Website Design - Jeff Wang Portfolio (HTML + CSS + JS)
 
-- Compiled numerous online resources in order to learn basic web development in the span of a week
+- Compiled numerous online resources in order to learn web development 
 
 - Developed a responsive portfolio website using HTML, CSS and JavaScript to match my initial prototype design
 
