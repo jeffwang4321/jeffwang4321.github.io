@@ -534,7 +534,7 @@
                 </div>
 
                 <div class="box">
-                    <a class="popup-button" href="https://github.com/jeffwang4321/Library-Database" target="_">
+                    <a class="popup-button" href="#popup_p01">
                         <div class="overlay-text">
                             <h1>Library DB</h1>
                             <p>Python x SQLite Application</p>	
@@ -762,6 +762,133 @@
         </div>
         
         
+        <div id="popup_p01" class="overlay">
+            <div class="popup">
+                <a class="close" href="##">×</a>
+                <div class="content">
+                    <p><b>Library Database</b>&#160; — Database Systems I, SFU &#160; <a id="git_button" href="https://github.com/jeffwang4321/Library-Database" target="_"><i class='bx bxl-github'></i><b>GitHub</b></a></p>
+                    <p><b>Duration: 15 hrs</b>&#160; (Apr 2020 – May 2020)</p>
+                    <ul>
+                        <li>
+                            •&#160; Designed and built a real-world database application for Vancouver libraries
+                        </li>
+                        <li>
+                            •&#160; Designed an entity-relationship model and drafted it into an E/R diagram
+                        </li>
+                        <li>
+                            •&#160; Ensured the schema met the project requirements and avoided anomalies
+                        </li>
+                        <li>
+                            •&#160; Converted the E/R diagram to table schemas for this database using SQLite
+                        </li>
+                        <li>
+                            •&#160; Built the database application using Python and SQLite
+                        </li>
+                    </ul>
+                    
+
+                    <p><b>Features/ Specifications</b></p>
+                    <ul>
+                        <li>
+                            •&#160; Users can find, borrow and return an item in the library
+                        </li>
+                        <li>
+                            •&#160; User can donate an item to the library
+                        </li>
+                        <li>
+                            •&#160; Users can find and register for an event in the library
+                        </li>
+                        <li>
+                            •&#160; Users can volunteer and ask a librarian for assistance
+                        </li>
+                        <li>
+                            •&#160; Users can list all items, people, dues and events table
+                        </li>
+                    </ul>
+
+                    <p><b>E/R Diagram</b></p>
+                    <img width ="100%" src="./img/erdiagram.JPG">
+
+                    <p></p><p></p><p></p>
+                    <p>Schema:</p>
+                    <ul>
+                        <li>
+                            •&#160; Item (<u>ID</u>, title, author, edition, year, genre, quantity, numAvailable)
+                        </li>
+                        <li>
+                            •&#160; ItemCopy (<u>itemID</u>, <u>copyNum</u>, type, status)
+                        </li>
+                        <li>
+                            •&#160; FutureItem (<u>ID</u>, title, author, edition, year, genre, quantity, type, arrivalDate)
+                        </li>
+                        <li>
+                            •&#160; Person (<u>ID</u>, firstName, lastName, age, owes)
+                        </li>
+                        <li>
+                            •&#160; Registered (<u>personID</u>, <u>eventID</u>)
+                        </li>
+                        <li>
+                            •&#160; Event (<u>ID</u>, eventName, date, room, startTime, endTime, fee, recommendedAge)
+                        </li>
+                        <li>
+                            •&#160; CheckedOut (<u>copyID</u>, <u>personID</u>, <u>itemID</u>)
+                        </li>
+                        <li>
+                            •&#160; Dues (<u>copyID</u>, <u>personID</u>, <u>itemID</u>, dueDate)
+                        </li>
+                        <li>
+                            •&#160; Staff (<u>ID</u>, firstName, lastName, age, gender, role)
+                        </li>
+                    </ul>
+
+                    <p></p><p></p><p></p>
+                    <p><b>Demo</b></p>
+                    <ul>
+                        <li>
+                            •&#160; List all book items
+                        </li>
+                    </ul>
+                    <img width ="100%" src="./img/listitems.JPG">
+
+                    <p></p><p></p><p></p>
+                    <p><b>Demo</b></p>
+                    <ul>
+                        <li>
+                            •&#160; List all people and dues
+                        </li>
+                    </ul>
+                    <img width ="100%" src="./img/listpersons.JPG">
+
+                    <p></p><p></p><p></p>
+                    <p><b>Demo</b></p>
+                    <ul>
+                        <li>
+                            •&#160; Return a book item
+                        </li>
+                    </ul>
+                    <img width ="100%" src="./img/returnbook.JPG">
+
+
+                    <table>
+                        <tr><th>TECHNOLOGIES</th></tr>
+                        <tr>
+                            <td>
+                                <div id= "table_item">
+                                    <img src="logo/python.png">
+                                    <h4>Python</h4>
+                                </div>
+                                <div id= "table_item">
+                                    <img src="logo/sqlite.png">
+                                    <h4>SQLite</h4>
+                                </div>
+                            </td>
+                        </tr>  
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
         
         <div id="popup_p1" class="overlay">
             <div class="popup">
