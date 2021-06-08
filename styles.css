@@ -225,7 +225,7 @@ button a{
 }
 .w-container{
 	width: 90%;
-	height: 240px;
+	height: 480px;
 	display:grid;
 	grid-template-columns:1fr 1fr 1fr;
 	grid-gap: 30px;
@@ -254,34 +254,34 @@ button a{
 	grid-template-columns:1fr 1fr 1fr;
 	grid-gap: 30px;
 }
-.box{
+.box, .box2{
 	overflow: hidden;
 	border-radius: 15px;
 	box-shadow: 3px 3px 15px rgba(0,0,0,0.3);
 }
-.box img{
+.box img, .box2 img{
     width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
-.box:hover .overlay-text{
+.box:hover .overlay-text, .box2:hover .overlay-text{
     display: flex;
     cursor: pointer;
 }
-.box2{
+/* .box2{
 	overflow: hidden;
 	border-radius: 15px;
 	box-shadow: 3px 3px 15px rgba(0,0,0,0.3);
-}
-.box2 img{
+} */
+/* .box2 img{
     width: 100%;
 	height: 100%;
 	object-fit: cover;
-}
-.box2:hover .overlay-text{
+} */
+/* .box2:hover .overlay-text{
     display: flex;
     cursor: pointer;
-}
+} */
 .overlay-text{
     color: white;
 	position: absolute;
@@ -433,7 +433,7 @@ footer a:hover{
 /* Smaller project/ work grids */
 @media only screen and (max-width : 1400px){
     .w-container{
-        height: 160px;
+        height: 360px;
         grid-template-columns:1fr 1fr 1fr;
     }
     .container{
@@ -520,7 +520,7 @@ footer a:hover{
     }
 
     .w-container{
-        height: 500px;
+        height: 600px;
         grid-template-columns:1fr;
     }
     .container{
