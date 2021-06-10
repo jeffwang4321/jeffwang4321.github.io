@@ -137,11 +137,11 @@ button a{
 .info-list li{
     padding: 18px 0;
 }
-.info-list li a{
+li a{
     text-decoration: none;
     color:  #4070F4;
 }
-.info-list li a:hover{
+li a:hover{
     color:  grey;
 }
 .skills-button{
