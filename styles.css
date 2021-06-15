@@ -185,7 +185,7 @@ li a:hover{
     position: absolute;
     /* text-align: center;
     width: 100px; */
-	right: -10px;
+	right: -17px;
 	top: -40px;
 	color: white;
 	background: black;
@@ -202,10 +202,10 @@ li a:hover{
 	border-top: 5px solid #313131;
 	content: "";
 }
-.skill-bars li .percent80  { width: 87%; }
-.skill-bars li .percent85  { width: 90%; }
-.skill-bars li .percent90  { width: 93%; }
-.skill-bars li .percent95  { width: 95%; }
+.skill-bars li .percent80  { width: 91%; }
+.skill-bars li .percent85  { width: 93%; }
+.skill-bars li .percent90  { width: 95%; }
+.skill-bars li .percent95  { width: 97%; }
 
 
 /* Work section*/
@@ -455,7 +455,7 @@ footer a:hover{
 }
 
 /* Shift Skill list down & Shift work/Projects to 2 columns & expand about text  */
-@media only screen and (max-width : 765px){
+@media only screen and (max-width : 815px){
     .skills{
         display: block;
         padding: 30px 15% 0;
@@ -480,6 +480,17 @@ footer a:hover{
 
     #about p{
         padding: 10px 10%;
+    }
+
+    /* Chat bubbles */
+    .skill-bars li .progress span {
+        color: white;
+        background: black;
+    }
+    .skill-bars li .progress span::after {
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        border-top: 5px solid #313131;
     }
 }
 
@@ -576,6 +587,17 @@ footer a:hover{
         width: 60px;
     }
 
+}
+
+/* Remove Chat bubbles*/
+@media only screen and (max-width : 520px){
+    .skill-bars li .progress span {
+        color: transparent;
+        background: transparent;
+    }
+    .skill-bars li .progress span::after {
+        border: none;
+    }
 
 }
 
