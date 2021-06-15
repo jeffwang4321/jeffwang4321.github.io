@@ -1,5 +1,5 @@
-# jeffwang4321.github.io
-Responsive Website Design - Jeff Wang Portfolio (HTML5 + CSS3 + JS)
+# Portfolio Website
+Responsive Website Design - (HTML5 + CSS3 + JS)
 
 - Developed a responsive portfolio website using HTML5, CSS3 and JavaScript to match my initial design
 
