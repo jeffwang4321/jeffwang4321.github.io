@@ -507,7 +507,6 @@ footer a:hover{
     }
 
     #home img{
-        /* border: 5px solid gray; */
         border-radius: 50%;
         height: 200px;
         width: 200px;
@@ -530,6 +529,54 @@ footer a:hover{
     .overlay-text{
         font-size: 4.5vw;
     }
+
+    /********************* Resize Popup Menu *********************/    
+    .popup {
+        margin: auto;
+        padding: 30px;
+        width: 100%;
+        border-radius: 0px;
+    }
+    .popup .close {
+        top: 0px;
+        right: 10px;
+    }
+    .content li{
+        padding: 0 10px 20px;  
+    }
+    
+    .overlay #git_button{
+        padding-left: 3px;
+    }
+    .overlay #git_button i{
+        padding: 0 3px 0 0;
+        font-size: 30px;
+    }
+
+    /* images and youtube Videos in popups*/
+    .content img{
+        text-align: center;
+        padding: 0px 5px;
+    }
+    .content iframe{
+        text-align: center;
+        padding: 0px 5px;
+    }
+
+    /* Technology Table for Popup menu */
+    #table_item{
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+        margin: 10px;
+    }
+    #table_item img{
+        padding: 10px;
+        height: 60px;
+        width: 60px;
+    }
+
+
 }
 
 /* Remove skill text */
