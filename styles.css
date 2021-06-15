@@ -202,9 +202,9 @@ li a:hover{
 	border-top: 5px solid #313131;
 	content: "";
 }
-.skill-bars li .percent80  { width: 80%; }
-.skill-bars li .percent85  { width: 85%; }
-.skill-bars li .percent90  { width: 90%; }
+.skill-bars li .percent80  { width: 87%; }
+.skill-bars li .percent85  { width: 90%; }
+.skill-bars li .percent90  { width: 93%; }
 .skill-bars li .percent95  { width: 95%; }
 
 
@@ -596,7 +596,11 @@ footer a:hover{
         padding-top: 0;
     }
 
-    .skill-bars li strong {
+    /* .skill-bars li strong {
         color: transparent;
+    } */
+    .skill-bars li strong {
+        top: -28px;
+        font-size: 13px;
     }
 }
