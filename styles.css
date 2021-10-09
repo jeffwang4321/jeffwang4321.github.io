@@ -544,7 +544,7 @@ footer a:hover{
     /********************* Resize Popup Menu *********************/    
     .popup {
         margin: auto;
-        padding: 30px;
+        padding: 40px 20px 20px;
         width: 100%;
         border-radius: 0px;
     }
