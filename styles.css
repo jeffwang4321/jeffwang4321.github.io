@@ -51,11 +51,11 @@ header nav ul li a:hover{
     text-align: center;  
 }
 #home img{
-    /* border: 5px solid gray; */
-    border-radius: 50%;
+    /* border: 5px solid black; */
+    border-radius: 200px;
     height: 300px;
     width: 300px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 #home p{
     font-size: 50px;
