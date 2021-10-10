@@ -36,20 +36,20 @@ const sr = ScrollReveal({
 
 /*SCROLL HOME*/
 sr.reveal('#home img',{});
-sr.reveal('#home h4',{delay: 100}); 
-sr.reveal('#home p',{delay: 200}); 
-sr.reveal('.home_buttons',{delay: 300}); 
+sr.reveal('#home h4',{delay: 200}); 
+sr.reveal('#home p',{delay: 400}); 
+sr.reveal('.home_buttons',{delay: 600}); 
 
 
 /*SCROLL ABOUT*/
 sr.reveal('#about h3',{}); 
-sr.reveal('#about p',{delay: 100}); 
+sr.reveal('#about p',{delay: 200}); 
 
 /*SCROLL SKILLS*/
 sr.reveal('.column h3',{}); 
 sr.reveal('.info-list',{delay: 200}); 
 sr.reveal('.skill-bars',{delay: 200});
-sr.reveal('.skills-button',{delay: 300});
+sr.reveal('.skills-button',{delay: 400});
 
 
 /*SCROLL WORK*/
@@ -59,6 +59,6 @@ sr.reveal('.w-container',{delay: 200});
 /*SCROLL PROJECTS*/
 sr.reveal('#projects h3',{}); 
 sr.reveal('.box',{delay: 200}); 
-sr.reveal('.box2',{delay: 200}); 
+// sr.reveal('.box2',{delay: 200}); 
 
 
