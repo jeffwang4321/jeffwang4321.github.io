@@ -410,6 +410,17 @@ footer a:hover{
 .footer-links{
     padding: 10px;
 }
+#designed-by{
+    font-size: medium;
+    text-decoration: none; 
+}
+
+#designed-by::after{
+	content: "© 2021 All Rights Reserved";
+}
+#designed-by:hover::after{
+	content: "Designed by Jeff Wang";
+}
 
 
 /* Scrollbar Effects */
