@@ -403,6 +403,7 @@ footer a{
     color: white;
     font-size: 25px;
     padding: 15px;
+    text-decoration: none; 
 }
 footer a:hover{
     color: #4070F4;
@@ -412,7 +413,6 @@ footer a:hover{
 }
 #designed-by{
     font-size: medium;
-    text-decoration: none; 
 }
 
 #designed-by::after{
